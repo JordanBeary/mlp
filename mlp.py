@@ -168,3 +168,13 @@ a_x = pd.Series(np.asarray(actual))
 p_x = pd.Series(np.asarray(predicted))
 confusion_matrix_x = pd.crosstab(a_x, p_x)
 confusion_matrix_x
+
+# for experiment 2...
+
+# shuffle and sample quarter of the training data
+np.random.shuffle(train_data)
+quarter_train_data = train_data[:15000]
+
+# shuffle and sample half of the training data
+np.random.shuffle(train_data)
+half_train_data = train_data[:30000]
